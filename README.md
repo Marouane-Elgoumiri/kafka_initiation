@@ -9,9 +9,16 @@
 </div>
 
 ## I. Download latest version of Kafka from the official docs:
-<a href="https://kafka.apache.org/downloads">Download</a>
 
-## I.. Extract the file and run Zookeper and kafka-server
+<div>
+   
+   ![Screenshot from 2024-04-29 10-22-01](https://github.com/Marouane-Elgoumiri/kafka_initiation/assets/96888594/52baa0b6-931f-4a8b-8172-615d7489f445)
+
+   <a href="https://kafka.apache.org/downloads">Download</a>  
+</div>
+
+
+## II. Extract the file and run Zookeper and kafka-server
 ![Screenshot from 2024-04-29 10-25-40](https://github.com/Marouane-Elgoumiri/kafka_initiation/assets/96888594/3b81fe56-6737-447a-9cc9-a969c1283723)
 
 ### open the extracted folder:
