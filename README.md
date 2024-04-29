@@ -99,21 +99,23 @@
 ### Create Consumer class:
 
 ```java
-  package org.example;
-
-import org.apache.kafka.clients.consumer.ConsumerRecords;
-import org.apache.kafka.clients.consumer.KafkaConsumer;
-
-import java.time.Duration;
-import java.util.Collections;
-import java.util.Properties;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
-
-public class ConsumerApp {
+   public class ConsumerApp {
     public static void main(String[] args) {
+        ConsumerApp newConsumer = new ConsumerApp();
+        newConsumer.consume();
+    }
+
+    public static void consume() {
         Properties props = new Properties();
         props.put("bootstrap.servers", "localhost:9092");
+        props.put("group.id", "test");
+        props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
+        props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
+        props.put(ConsumerConfig.GROUP_ID_CONFIG, "test");
+        props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
+        props.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, "false");
+        props.put(ConsumerConfig.AUTO_COMMIT_INTERVAL_MS_CONFIG, "1000");
+        props.put(ConsumerConfig.SESSION_TIMEOUT_MS_CONFIG, "30000");
         props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         props.put("GROUP_ID_CONFIG", "test-group-1");
@@ -126,14 +128,12 @@ public class ConsumerApp {
                 System.out.println("Key "+record.key()+" value "+record.value()+" topic:"+record.topic());
             });
         },1000, 1000, TimeUnit.MILLISECONDS);
-
+    }
+}
 ```
 
 ### Result:
 ![Screenshot from 2024-04-29 10-29-02](https://github.com/Marouane-Elgoumiri/kafka_initiation/assets/96888594/2e038c58-140f-4358-9ddc-ca89a6950fd0)
-
-
-![Screenshot from 2024-04-29 10-29-02](https://github.com/Marouane-Elgoumiri/kafka_initiation/assets/96888594/fea0ba49-015a-492d-b12e-cbf051c9cbd4)
 
         
   
