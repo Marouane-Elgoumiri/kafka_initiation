@@ -21,19 +21,48 @@
 ## II. Extract the file and run Zookeper and kafka-server
 ![Screenshot from 2024-04-29 10-25-40](https://github.com/Marouane-Elgoumiri/kafka_initiation/assets/96888594/3b81fe56-6737-447a-9cc9-a969c1283723)
 
+
 ### open the extracted folder:
 ```bash
    cd kafka_2.12-3.7.0
 ```
-
-### run zookeper:
+### Debian Linux 
+![Debian](https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=debian&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+#### run zookeper:
 ```bash
   bin/zookeeper-server-start.sh config/zookeeper.properties
 ```
-### run Kafka-server client:
+#### run Kafka-server client:
 
 ```bash
   bin/kafka-server-start.sh config/server.properties
+```
+### Windows
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+![Windows 11](https://img.shields.io/badge/Windows%2011-%230079d5.svg?style=for-the-badge&logo=Windows%2011&logoColor=white)
+#### Start Zookeeper
+```bash
+start bin\windows\zookeeper-server-start config\zookeeper.properties
+```
+#### Start Kafka server
+```bash
+   start bin\windows\kafka-server-start config\server.properties
+```
+#### Create Topic 
+```bash
+   bin\windows\kafka-topics --create --topic quickstart-events --bootstrap-server localhost:9092
+   bin\windows\kafka-topics --create --topic quickstart-events2 --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1
+```
+
+#### Create Producer
+```bash
+   Start bin\windows\kafka-console-producer –topic quickstart-events --bootstrap-server localhost:9092
+```
+#### Create Consumer
+```bash
+    Start bin\windows\kafka-console-consumer –topic quickstart-events --bootstrap-server localhost:9092  
 ```
 ## III. Create a maven project:
 
