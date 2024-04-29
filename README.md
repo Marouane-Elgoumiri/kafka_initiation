@@ -140,7 +140,7 @@
 ```
 
 ### Result:
-![Screenshot from 2024-04-29 10-29-02](https://github.com/Marouane-Elgoumiri/kafka_initiation/assets/96888594/2e038c58-140f-4358-9ddc-ca89a6950fd0)
+![Screenshot from 2024-04-29 11-28-05](https://github.com/Marouane-Elgoumiri/kafka_initiation/assets/96888594/24fb916f-42d0-4028-86b4-bc6daa0afce8)
 
         
   
