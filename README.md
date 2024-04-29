@@ -12,9 +12,7 @@
 <a href="https://kafka.apache.org/downloads">Download</a>
 
 ## I.. Extract the file and run Zookeper and kafka-server
-
-![Screenshot from 2024-04-29 10-25-40](https://github.com/Marouane-Elgoumiri/kafka_initiation/assets/96888594/69497d5a-2d57-447b-81a0-1fd6695be522)
-
+![Screenshot from 2024-04-29 10-25-40](https://github.com/Marouane-Elgoumiri/kafka_initiation/assets/96888594/3b81fe56-6737-447a-9cc9-a969c1283723)
 
 ### open the extracted folder:
 ```bash
@@ -32,7 +30,8 @@
 ```
 ## III. Create a maven project:
 
-![Screenshot from 2024-04-29 10-27-58](https://github.com/Marouane-Elgoumiri/kafka_initiation/assets/96888594/ae282c0d-0dd1-420c-b589-c91b5a61c608)
+![Screenshot from 2024-04-29 10-27-58](https://github.com/Marouane-Elgoumiri/kafka_initiation/assets/96888594/c8084f3b-6c45-43b7-94cc-c9ffd38474d2)
+
 
 ### Add the necessary Dependencies from Apache Kafka docs (Client & Streams)
 
@@ -131,6 +130,8 @@ public class ConsumerApp {
 ```
 
 ### Result:
+![Screenshot from 2024-04-29 10-29-02](https://github.com/Marouane-Elgoumiri/kafka_initiation/assets/96888594/2e038c58-140f-4358-9ddc-ca89a6950fd0)
+
 
 ![Screenshot from 2024-04-29 10-29-02](https://github.com/Marouane-Elgoumiri/kafka_initiation/assets/96888594/fea0ba49-015a-492d-b12e-cbf051c9cbd4)
 
