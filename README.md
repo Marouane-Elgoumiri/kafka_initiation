@@ -67,9 +67,14 @@ start bin\windows\zookeeper-server-start config\zookeeper.properties
 ## III. Create a maven project:
 
 ![Screenshot from 2024-04-29 10-27-58](https://github.com/Marouane-Elgoumiri/kafka_initiation/assets/96888594/c8084f3b-6c45-43b7-94cc-c9ffd38474d2)
+### Use Kafka Plugin in the Marketplace to create Topics directly from the IDE:
+![Screenshot from 2024-04-29 11-59-51](https://github.com/Marouane-Elgoumiri/kafka_initiation/assets/96888594/90307447-c7e6-4a0c-b3ba-1735f4620ed8)
+
+### Create Topics:
+![Screenshot from 2024-04-29 12-03-43](https://github.com/Marouane-Elgoumiri/kafka_initiation/assets/96888594/ec3ff313-b29f-48ea-a646-053b20522f71)
 
 
-### Add the necessary Dependencies from Apache Kafka docs (Client & Streams)
+### 1. Add the necessary Dependencies from Apache Kafka docs (Client & Streams)
 
 ```bash
   <dependency>
@@ -98,7 +103,7 @@ start bin\windows\zookeeper-server-start config\zookeeper.properties
       <version>1.2.17</version>
     </dependency>
 ```
-### Create Producer class:
+### 2. Create Producer class:
 ```java
   public class ProducerApp {
     public static void main(String[] args) {
@@ -132,7 +137,7 @@ start bin\windows\zookeeper-server-start config\zookeeper.properties
 }
 ```
 
-### Create Consumer class:
+### 3. Create Consumer class:
 
 ```java
    public class ConsumerApp {
@@ -168,7 +173,7 @@ start bin\windows\zookeeper-server-start config\zookeeper.properties
 }
 ```
 
-### Result:
+### 4. Result:
 ![Screenshot from 2024-04-29 11-28-05](https://github.com/Marouane-Elgoumiri/kafka_initiation/assets/96888594/24fb916f-42d0-4028-86b4-bc6daa0afce8)
 
         
