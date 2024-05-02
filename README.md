@@ -8,7 +8,7 @@
 ![Intellij Idea](https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
 </div>
 
-## I. Download latest version of Kafka from the official docs:
+## I. Download the latest version of Kafka from the official docs:
 
 <div>
    
